@@ -9,8 +9,12 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+// Ask the name of the user, and display in the dialog box the following welcome message 
+// : Hello, [name] !.
+
+(function() {
+    let name = window.prompt("Enter your name: ");
+    alert("Your name is " + name);
 
 })();

@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+// Ask the user if he wants some cake. 
+// If yes, congratulate him/her; for any other response, say: More cake for me then :p !
 
-  // your code here
+(function() {
+	let cake = window.prompt("Do you want some cake ");
+
+    if (cake==="yes") {
+    	alert("Congrats");
+    }else if (cake==="Yes") {alert("Congrats");
+}else {
+		alert("More cake for me then");
+		}
 
 })();
+
