@@ -9,14 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
+// On click to the button, get the numbers displayed in the input, 
+// and display them sorted in ascending order.
+
+
+
 (function() {
+
 
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
-
-    });
+		let numArray = JSON.parse("["+document.getElementById("numbers").value+"]");
+        numArray.sort(function(a, b) {
+  		return a - b;
+		});
+  		alert(numArray);
+  		});
 
 })();
+
+

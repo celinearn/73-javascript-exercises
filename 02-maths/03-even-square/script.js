@@ -9,11 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// On click on the button, calculate and display the square numbers between 1 and 21.
+
+
+
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        for(let i = 2; i <= 21; i += 2){ 
+        	let carré = Math.pow(i, 2);
+			alert(carré);
+			} 
 
     });
 
