@@ -11,6 +11,23 @@
 
 (function() {
 
-    // your code here
+	let mois = new Array("Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Décembre");
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        let annee = new Date(document.getElementById("year").value); 
+        let treize;
+
+        for (let i = 0; i < 12; i++) { 
+
+            annee.setMonth(i, 13);
+
+            if (annee.getDay() == 5) {
+                treize = mois[i];
+                alert(`Il y a un vendredi 13 en ${treize}`);
+            }
+        }
+
+    })
 
 })();

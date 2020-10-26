@@ -11,8 +11,17 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+let h = new Date().getHours();
+let m = new Date().getMinutes();
 
-    // your code here
+
+if (h<17 && m<30) {
+document.getElementById("target").innerHTML = "Hello";
+}else if (h>18 && m>30){
+document.getElementById("target").innerHTML = "Good evening";
+}else {
+document.getElementById("target").innerHTML = "On est hors de l'espace-temps";
+}
+
 
 })();

@@ -11,6 +11,15 @@
 
 (function() {
 
+	let d = new Date();
+	let h = d.getHours() + "h" + d.getMinutes();
+	let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+	// let date = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+	// let hours = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+
+	document.getElementById("target").innerHTML =(d.toLocaleDateString('ENG', options) + "," + " " + h);
+
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
