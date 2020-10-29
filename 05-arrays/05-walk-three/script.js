@@ -11,6 +11,8 @@
 
 (function() {
 
+document.getElementById("run").addEventListener("click", function() {
+
     var people = [
         {
             firstname: "Garald",
@@ -39,6 +41,8 @@
         },
     ];
 
-    // your code here
+        let i;
+        people.forEach(element => console.log(element.firstname));
+    });
 
 })();

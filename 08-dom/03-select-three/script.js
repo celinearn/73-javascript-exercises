@@ -9,8 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// (function() {
+
+// 		document.getElementsByClassName('target')[0].innerHTML = "owned";
+// 		document.getElementsByClassName('target')[1].innerHTML = "owned";
+// 		document.getElementsByClassName('target')[2].innerHTML = "owned";
+// 		document.getElementsByClassName('target')[3].innerHTML = "owned";
+// 		document.getElementsByClassName('target')[4].innerHTML = "owned";
+
+// })();
+
 (function() {
 
-    // your code here
+		let arr = document.getElementsByClassName("target");
+		for (let i = 0; i < arr.length; i++) {
+			document.getElementsByClassName('target')[i].innerHTML = "owned";
+		}
+		
 
 })();

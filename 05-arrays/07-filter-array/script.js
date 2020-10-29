@@ -9,7 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// When you click the button, create a new array from the array people, 
+// containing only the people whose age is more than 18 years. 
+// Display the resulting array in the console.
+
 (function() {
+
+    document.getElementById("run").addEventListener("click", function() {
+
 
     const people = [
         {
@@ -89,6 +96,17 @@
         },
     ];
 
-    // your code here
+
+ let olderThan18 = [];
+
+ for (let i=0;i<people.length;i++){
+           let age = new Number(people[i].age);
+            if (age > 18) {
+            olderThan18.push(people[i])    
+            console.log(people[i]);
+            }
+        }   
+
+});
 
 })();

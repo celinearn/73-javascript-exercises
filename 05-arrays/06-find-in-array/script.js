@@ -11,6 +11,8 @@
 
 (function() {
 
+document.getElementById("run").addEventListener("click", function() {
+
     const people = [
         {
             firstname: "Bradford",
@@ -89,6 +91,11 @@
         },
     ];
 
-    // your code here
+    people.forEach(function(item, index) {
+  console.log(people[8].email, 8);
+    });
+
+});
+
 
 })();
